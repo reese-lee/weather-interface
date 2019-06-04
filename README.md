@@ -6,7 +6,7 @@
 
 ## Description
 
-* _This program returns weather information for a city._
+_This program returns weather information for a city through an API call to openweathermap.org._
 
 ## Specs
 | Behavior | Input | Output |
