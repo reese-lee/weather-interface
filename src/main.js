@@ -1,5 +1,5 @@
 // import { ClassName } from './class-name.js';
-// import $ from 'jquery';
+import $ from 'jquery';
 // import 'bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import './styles.css';
@@ -9,7 +9,7 @@ $(document).ready(function() {
     let city = $('#location').val();
     $('#location').val("");
     $.ajax({
-      url: `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9abafe55ce6c35799b79c739c11dfd1c`,
+      url: `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`,
       type: 'GET',
       data: {
         format: 'json'
